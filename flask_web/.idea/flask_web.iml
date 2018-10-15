@@ -4,10 +4,13 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="flask_web" />
   </component>
-  <component name="TestRunnerService">
-    <option name="projectConfiguration" value="Twisted Trial" />
-    <option name="PROJECT_TEST_RUNNER" value="Twisted Trial" />
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/../flask_web\templates" />
+      </list>
+    </option>
   </component>
 </module>
