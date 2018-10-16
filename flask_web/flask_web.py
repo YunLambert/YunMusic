@@ -1,4 +1,4 @@
-from flask import Flask,render_template,redirect,url_for
+from flask import Flask,request,render_template,redirect,url_for
 from flask.ext.wtf import Form
 from wtforms import StringField,SubmitField
 
@@ -8,13 +8,13 @@ app.config["SECRET_KEY"] = "12345678"
 
 @app.route('/',methods=['GET','POST'])
 def index():
-    name=None
-    form=NameForm()
-    return render_template('index.html',form=form)
+    if request.method=='POST':
+        return redirect('search')
+    return render_template('index.html')
 
-@app.route('/search/<name>')
-def search(name):
-    return render_template('search_item.html',name=name)
+@app.route('/search')
+def search():
+    return render_template('search_item.html')
 
 @app.errorhandler(404)
 def page_not_found(e):
