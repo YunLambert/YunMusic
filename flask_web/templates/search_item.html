@@ -23,5 +23,11 @@
 </style>
 <body>
 
+{% block page_content %}
+<div>
+    <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
+</div>
+{% endblock %}
+
 </body>
 </html>
