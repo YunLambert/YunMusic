@@ -11,17 +11,18 @@ def index():
     if request.method == 'GET':
         return render_template('index.html')
     if request.method == 'POST':
-        name=request.args.get('name')
+        name=request.form.get('name')
         NameSaved.name=name
         return redirect(url_for('search',name=name))
     return render_template('index.html')
 
 
-@app.route('/search', methods=['GET', 'POST'])
+@app.route('/search', methods=['GET'])
 def search():
     name=NameSaved.name
+    print(name)
     return render_template('search_item.html',name=name)
-
+    #return u'the search is:%s' % name
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -38,7 +39,7 @@ class NameForm(Form):
     submit = SubmitField("Submit")
 
 class NameSaved():
-    name=''
+    name='hell0'
 
 
 if __name__ == '__main__':

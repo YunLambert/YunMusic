@@ -10,12 +10,15 @@
 </head>
 <body>
 {#onsubmit="submitFn(this, event);"#}
-	<form  action="{{ url_for('search') }}" method="post">
+	<form  method="POST" action="{{ url_for('index') }}">
+{#        <input  name="name" type="text" class="search-input" placeholder="Type to search" />#}
+{#        <input type="submit" class="search-icon" value="START">#}
 		<div class="search-wrapper">
 			<div class="input-holder">
-				<input id="name" type="text" class="search-input" placeholder="Type to search" />
+				<input name="name" type="text" class="search-input" placeholder="Type to search" />
 				<button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
-			</div>
+
+            </div>
 			<span class="close" onclick="searchToggle(this, event);"></span>
 			<div class="result-container">
 
