@@ -19,15 +19,105 @@
 
     body {
         background: #252525;
+        margin: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    li a.active {
+        background-color: crimson;
+        color: white;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+
+    h1 {
+        color: ghostwhite;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    p.dotted {
+        border-style: dotted;
+    }
+
+    table{
+        width:100%;
+    }
+    table, td, th {
+        border: 1px solid crimson;
+        color:white;
+    }
+    th{
+        background-color:crimson;
+        height:50px;
+        color:white;
+    }
+
+    td{
+        text-align:center;
     }
 </style>
 <body>
+<ul>
+    <li><a class="active" href="http://127.0.0.1:5000/">搜索页面</a></li>
+    <li><a href="#news">上传资源</a></li>
+    <li><a href="#contact">联系</a></li>
+    <li><a href="#about">关于</a></li>
+</ul>
 
-{% block page_content %}
-<div>
-    <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
+<div style="margin-left:15%;padding:1px 16px;height:1000px;">
+    {% block page_content %}
+        <div>
+            <h1>
+                {% if name %}The Search Results Of {{ name }}{% else %}Error when searching....{% endif %}
+            </h1>
+        </div>
+    {% endblock %}
+
+    <div style=".table-responsive">
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Song Name</th>
+                <th>Links</th>
+            </tr>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Test</td>
+                <td>May 15, 2015</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Test2</td>
+                <td>Jul 01, 2015</td>
+            </tr>
+
+        </table>
+    </div>
 </div>
-{% endblock %}
+
 
 </body>
 </html>

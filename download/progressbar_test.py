@@ -1,7 +1,7 @@
 from tqdm import tqdm, trange
 from time import sleep
 
-bar = trange(10)
+bar = trange(6)
 for i in bar:
     # Print using tqdm class method .write()
     sleep(0.1)
