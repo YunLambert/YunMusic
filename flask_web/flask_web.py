@@ -33,6 +33,9 @@ def page_not_found(e):
 def internal_server_error(e):
     return render_template('500.html'), 500
 
+@app.route('/contacts', methods=['GET'])
+def contacts():
+    return render_template('contacts.html')
 
 class NameForm(Form):
     name = StringField("Search song")

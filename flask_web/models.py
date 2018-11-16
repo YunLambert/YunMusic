@@ -17,13 +17,13 @@ class songsave(db.Model):
 class admin(db.Model):
     pass
 
-if __name__=="__main__":
-    db.create_all()
-    song1=songsave(
-        id=1,
-        name="动物世界",
-        link="http://www/baidu.com"
-    )
-    db.session.add(song1)
-    db.session.commit()
+# if __name__=="__main__":
+#     db.create_all()
+#     song1=songsave(
+#         id=1,
+#         name="动物世界",
+#         link="http://www/baidu.com"
+#     )
+#     db.session.add(song1)
+#     db.session.commit()
 
