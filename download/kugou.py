@@ -11,8 +11,8 @@ class kugou():
         self.search_url = 'http://songsearch.kugou.com/song_search_v2?keyword={}&page=1&pagesize=30'
         self.hash_url = 'http://www.kugou.com/yy/index.php?r=play/getdata&hash={}'
 
-    def search(self):
-        songname = "动物世界"
+    def search(self,songname):
+        #songname = "动物世界"
         res = requests.get(self.search_url.format(songname), headers=self.headers).text
         filehashs = re.findall('"FileHash":"(.*?)"', res)
         temp_names = re.findall('"SongName":"(.*?)"', res)

@@ -144,7 +144,7 @@ class wangyiyun():
                     # if len(download_urls) == downnum:
                     #     break
                     songid, download_name = song['id'], song['name']
-                    print(songid)
+                    #print(songid)
                     download_names.append(song['name'])
                     newurl=self.download_url.format(song['id'])
                     download_urls.append(newurl)
@@ -176,6 +176,6 @@ class wangyiyun():
 
 
 # 测试用
-if __name__ == '__main__':
-    savepath='./results'
-    wangyiyun().get(songname='尾戒', savepath='./results')
+# if __name__ == '__main__':
+#     savepath='./results'
+#     wangyiyun().get(songname='尾戒', savepath='./results')

@@ -1,4 +1,4 @@
-from download import kugou, qqmusic
+from download import kugou, qqmusic, netease
 from download import progressbar_test
 
 
@@ -15,28 +15,35 @@ def cmd(options):
         print('[Error]: 平台号输入错误，必须在(1-%d)之间...' % len(options))
         return
 
-    songname=input('请输入歌曲名')
+    songname = input('请输入歌曲名: ')
     if songname == 'q' or songname == 'Q':
         print('Bye...')
         exit(-1)
 
-    # if choice=='1':
-    #     try:
-    #         kugou.kugou().
-    #     except:
-    #         print('Error:下载失败！')
-    #         return False
-    # elif choice=='2':
-    #     try:
-    #         qqmusic.qq().
-    #     except:
-    #         print("Error:下载失败！")
-    #         return False
+    if choice == '1':
+        try:
+            kugou.kugou().search(songname)
+        except:
+            print('Error:搜索失败！')
+            return False
+    elif choice == '2':
+        try:
+            qqmusic.qq().search(songname)
+        except:
+            print("Error:搜索失败！")
+            return False
+
+    elif choice == '3':
+        try:
+            netease.wangyiyun().get(songname)
+        except:
+            print("Error:搜索失败！")
+            return False
 
 
 if __name__ == '__main__':
     print("*************YunMusic Cmd测试端***************")
-    options = ["1.kugou","2.qqmusic"]
+    options = ["1.酷狗音乐", "2.qq音乐", "3.网易云"]
     while True:
         try:
             cmd(options)
