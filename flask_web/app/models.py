@@ -1,17 +1,17 @@
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
 
-# app = from flask import Flask
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URL'] = "mysql://root@localhost"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] =True
+app.config['SQLALCHEMY_DATABASE_URL'] = "mysql://root:root@127.0.0.1:8889/dataname"
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
 
+
 class songsave(db.Model):
-    __tablename__="Song"
-    id=db.Column(db.Integer,primary_key=True)
-    name=db.Column(db.String)
-    link=db.Column(db.String)
+    __tablename__ = "Song"
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String)
+    link = db.Column(db.String)
 
 
 class admin(db.Model):
@@ -26,4 +26,3 @@ class admin(db.Model):
 #     )
 #     db.session.add(song1)
 #     db.session.commit()
-
