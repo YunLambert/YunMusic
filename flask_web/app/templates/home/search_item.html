@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Search Result</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='admin/bootstrap/css/bootstrap.min.css') }}">
 </head>
 <style>
     @import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
@@ -60,21 +61,25 @@
         border-style: dotted;
     }
 
-    table{
-        width:100%;
-    }
-    table, td, th {
-        border: 1px solid crimson;
-        color:white;
-    }
-    th{
-        background-color:crimson;
-        height:50px;
-        color:white;
+    table {
+        width: 100%;
     }
 
-    td{
-        text-align:center;
+    table, td, th {
+        border: 1px solid crimson;
+        color: white;
+    }
+
+    th {
+        background-color: crimson;
+        height: 50px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    td {
+        text-align: center;
     }
 </style>
 <body>
@@ -93,26 +98,36 @@
         </div>
     {% endblock %}
 
-    <div style=".table-responsive">
-        <table>
-            <tr>
-                <th>#</th>
-                <th>Song Name</th>
-                <th>Links</th>
-            </tr>
+    {#    <div style=".table-responsive">#}
+    {#        <table>#}
+    {#            <tr>#}
+    {#                <th>#</th>#}
+    {#                <th>Song Name</th>#}
+    {#                <th>Links</th>#}
+    {#            </tr>#}
+    {#            <tbody>#}
+    {#            <tr>#}
+    {#                <td>1</td>#}
+    {#                <td>Test</td>#}
+    {#                <td>May 15, 2015</td>#}
+    {#            </tr>#}
+    {#        </table>#}
+    {#    </div>#}
+
+    <div class="box-body table-responsive no-padding">
+        <table class="table table-hover">
             <tbody>
             <tr>
-                <td>1</td>
-                <td>Test</td>
-                <td>May 15, 2015</td>
+                <th>编号</th>
+                <th>歌名</th>
+                <th>链接地址</th>
             </tr>
-
             <tr>
-                <td>2</td>
-                <td>Test2</td>
-                <td>Jul 01, 2015</td>
+                <td>1</td>
+                <td>Parcific</td>
+                <td>2017-01-01</td>
             </tr>
-
+            </tbody>
         </table>
     </div>
 </div>

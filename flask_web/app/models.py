@@ -1,10 +1,5 @@
-from flask_sqlalchemy import SQLAlchemy
-from flask import Flask
-
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URL'] = "mysql://root:root@127.0.0.1:8889/dataname"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-db = SQLAlchemy(app)
+from datetime import datetime
+from app import db
 
 
 class songsave(db.Model):
@@ -14,8 +9,16 @@ class songsave(db.Model):
     link = db.Column(db.String)
 
 
-class admin(db.Model):
-    pass
+class Admin(db.Model):
+    __tablename__ = "admin"
+    id = db.Column(db.Integer, primary_key=True)  # 编号
+    name = db.Column(db.String(100), unique=True)
+    pwd = db.Column(db.String(100))
+    is_super = db.Column(db.SmallInteger)
+    addtime = db.Column(db.DateTime, index=True, default=datetime.now)
+
+    def check_pwd(self, pwd):
+        return self.pwd == pwd
 
 # if __name__=="__main__":
 #     db.create_all()

@@ -23,14 +23,7 @@ def search():
     return render_template('home/search_item.html',name=name)
     #return u'the search is:%s' % name
 
-@home.errorhandler(404)
-def page_not_found(e):
-    return render_template('home/404.html'), 404
 
-
-@home.errorhandler(500)
-def internal_server_error(e):
-    return render_template('home/500.html'), 500
 
 @home.route('/contacts', methods=['GET'])
 def contacts():
