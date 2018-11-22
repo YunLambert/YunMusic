@@ -24,13 +24,27 @@
 
 ![2018-10-16_10-48-57.png](https://upload-images.jianshu.io/upload_images/7154520-63746e35c7a842b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![search_item.png](https://upload-images.jianshu.io/upload_images/7154520-4c94e807bc83a40e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIM截图20181122135848.png](https://upload-images.jianshu.io/upload_images/7154520-a96dc2fbd64d61c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![404.png](https://upload-images.jianshu.io/upload_images/7154520-784829e13d711cb6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
 ![login.png](https://upload-images.jianshu.io/upload_images/7154520-da5161ef55a4eede.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+
+![TIM截图20181122134903.png](https://upload-images.jianshu.io/upload_images/7154520-d63c2b19077fdd04.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![TIM截图20181122135648.png](https://upload-images.jianshu.io/upload_images/7154520-0bd52c5c050ed750.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![TIM截图20181122135703.png](https://upload-images.jianshu.io/upload_images/7154520-aa210540849b7acc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![TIM截图20181122135720.png](https://upload-images.jianshu.io/upload_images/7154520-92754df08d32c026.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![TIM截图20181122135741.png](https://upload-images.jianshu.io/upload_images/7154520-ccbb9a37cbc4370e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 
 ## 主要功能介绍
 

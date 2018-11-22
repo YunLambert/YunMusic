@@ -4,7 +4,7 @@ from flask import Flask,render_template
 import pymysql
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URL'] = "mysql+pymysql://root:root@127.0.0.1:8889/dataname"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:root@127.0.0.1:3306/YunMusic"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['SECRET_KEY']="12345678"
 app.debug = True
