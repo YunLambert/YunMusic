@@ -47,7 +47,7 @@
                 </a>
             </li>
             <li id="g_music_list">
-                <a href="{{ url_for('admin.music_list') }}">
+                <a href="{{ url_for('admin.music_list',page=1) }}">
                     <i class="fa fa-circle-o"></i> 音乐列表
                 </a>
             </li>
@@ -66,7 +66,7 @@
                 </a>
             </li>
             <li id="g_role_list">
-                <a href="{{ url_for('admin.role_list') }}">
+                <a href="{{ url_for('admin.role_list',page=1) }}">
                     <i class="fa fa-circle-o"></i> 管理员列表
                 </a>
             </li>

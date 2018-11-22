@@ -1,4 +1,5 @@
 # coding:utf8
+import os
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask,render_template
 import pymysql
@@ -7,6 +8,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:root@127.0.0.1:3306/YunMusic"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['SECRET_KEY']="12345678"
+app.config["UP_DIR"]=os.path.join(os.path.abspath(os.path.dirname(__file__)),"static/uploads/")
 app.debug = True
 db = SQLAlchemy(app)
 

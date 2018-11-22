@@ -18,7 +18,6 @@ class kugou():
         temp_names = re.findall('"SongName":"(.*?)"', res)
         download_names = []
         download_urls = []
-        lists=[]
         for filehash in filehashs:
             res = requests.get(self.hash_url.format(filehash))
             paly_url = re.findall('"play_url":"(.*?)"', res.text)[0]
@@ -29,8 +28,6 @@ class kugou():
         for i in range(len(download_urls)):
             print(temp_names[i] + ":" + download_urls[i])
 
-
-
-
+        return temp_names, download_urls
 
 

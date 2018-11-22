@@ -28,7 +28,7 @@ class qq():
         self.listen_url = 'http://ws.stream.qqmusic.qq.com/C100{}.m4a?fromtag=0&guid=126548448'
 
     def search(self,songname):
-        songname = "动物世界"
+        #songname = "动物世界"
         res = requests.get(self.search_url.format(songname), headers=self.headers).text
         media_mid_temp = re.findall('"media_mid":"(.*?)"', res)
         songmids = re.findall('"lyric_hilight":".*?","mid":"(.*?)","mv"', res)
@@ -48,5 +48,4 @@ class qq():
             listen_urls.append(self.listen_url.format(songmids[i]))
             print(temp_names[i] + ":" + self.listen_url.format(songmids[i]))
 
-        return temp_names,listen_urls
-
+        return temp_names, listen_urls

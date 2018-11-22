@@ -3,6 +3,8 @@ from flask import Flask, request, render_template, redirect, url_for
 from flask_wtf import Form
 from wtforms import StringField, SubmitField
 
+
+
 # app = Flask(__name__)
 # app.config["SECRET_KEY"] = "12345678"
 

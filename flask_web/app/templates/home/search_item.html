@@ -86,7 +86,7 @@
 <body>
 <ul>
     <li><a class="active" href="http://127.0.0.1:5000/">搜索页面</a></li>
-    <li><a href="#news">上传资源</a></li>
+    <li><a href="http://127.0.0.1:5000/admin/music/add">上传资源</a></li>
     <li><a href="http://127.0.0.1:5000/contacts">联系</a></li>
 </ul>
 
@@ -99,22 +99,6 @@
         </div>
     {% endblock %}
 
-    {#    <div style=".table-responsive">#}
-    {#        <table>#}
-    {#            <tr>#}
-    {#                <th>#</th>#}
-    {#                <th>Song Name</th>#}
-    {#                <th>Links</th>#}
-    {#            </tr>#}
-    {#            <tbody>#}
-    {#            <tr>#}
-    {#                <td>1</td>#}
-    {#                <td>Test</td>#}
-    {#                <td>May 15, 2015</td>#}
-    {#            </tr>#}
-    {#        </table>#}
-    {#    </div>#}
-
     <div class="box-body table-responsive no-padding">
         <table class="table table-hover">
             <tbody>
@@ -123,11 +107,13 @@
                 <th>歌名</th>
                 <th>链接地址</th>
             </tr>
+            {%  for i,j in data1,data2 %}
             <tr>
-                <td>1</td>
-                <td>Parcific</td>
-                <td>2017-01-01</td>
+                <td>#</td>
+                <td>{{ i }}</td>
+                <td><a href="#">j</a></td>
             </tr>
+            {%  endfor %}
             </tbody>
         </table>
     </div>
