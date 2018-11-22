@@ -107,11 +107,12 @@
                 <th>歌名</th>
                 <th>链接地址</th>
             </tr>
-            {%  for i,j in data1,data2 %}
+
+             {% for v in data %}
             <tr>
-                <td>#</td>
-                <td>{{ i }}</td>
-                <td><a href="#">j</a></td>
+                <td>{{ v.id }}</td>
+                 <td>{{ v.name }}</td>
+                <td><a href={{ v.url }}>{{ v.url }}</a></td>
             </tr>
             {%  endfor %}
             </tbody>

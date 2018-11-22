@@ -21,7 +21,7 @@ def index():
 def search():
     songname = NameSaved.name
     print(songname)
-
+    print("开始下载......")
     data1= []
     data2=[]
     name_qq, url_qq = qqmusic.qq().search(songname)
@@ -38,8 +38,16 @@ def search():
     for (i, j) in zip(name_kg, url_kg):
         data1.append(i)
         data2.append(j)
+    data=[]
+    for i in range(len(data1)):
+        temp={
+            "id":i+1,
+            "name":data1[i],
+            "url":data2[i]
+        }
+        data.append(temp)
 
-    return render_template('home/search_item.html', name=songname, data1=data1,data2=data2)
+    return render_template('home/search_item.html', name=songname, data=data)
     # return u'the search is:%s' % name
 
 
