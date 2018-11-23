@@ -18,40 +18,54 @@
 
 ![TIM截图20181117215514.png](https://upload-images.jianshu.io/upload_images/7154520-96d467691067730a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### Web端 -----施工中........
+### Web端 -----Done!
 
-![2018-10-16_10-48-34.png](https://upload-images.jianshu.io/upload_images/7154520-e2ee1fd8fce7894b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+包括前台和后台两个部分，用户在前台可以通过搜索歌曲名称找到已提供的音乐平台上的歌曲链接(可在线听并下载)，所有这样的链接都会显示在网站列表中；点击"上传资源"则会跳至后台服务，此处需要管理员账号和密码才能登陆，上传的资源记录会保存到数据库中，并在相应的地方进行显示。
 
-![2018-10-16_10-48-57.png](https://upload-images.jianshu.io/upload_images/7154520-63746e35c7a842b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+主要功能已经完成，后期如果需要修改的话，会放在扩展音乐平台资源与将后台上传的资源同样通过链接形式显示在前台服务中，再有就是一些细节上的优化。
 
-![TIM截图20181122135848.png](https://upload-images.jianshu.io/upload_images/7154520-a96dc2fbd64d61c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![20181123092733.png](https://upload-images.jianshu.io/upload_images/7154520-527df50a81f56458.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![20181123092758.png](https://upload-images.jianshu.io/upload_images/7154520-8eca1fb557a6214b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![20181123092822.png](https://upload-images.jianshu.io/upload_images/7154520-4ca8e281641498f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![20181123092844.png](https://upload-images.jianshu.io/upload_images/7154520-a4c50318cb396871.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![20181123092910.png](https://upload-images.jianshu.io/upload_images/7154520-0696a84d730aa0af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![20181123092932.png](https://upload-images.jianshu.io/upload_images/7154520-e69f2cd2cead09a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![20181123093000.png](https://upload-images.jianshu.io/upload_images/7154520-12c74671aaadce57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![20181123093024.png](https://upload-images.jianshu.io/upload_images/7154520-ccdf6bd95edef38d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![20181123093105.png](https://upload-images.jianshu.io/upload_images/7154520-863ebbfae7295fb3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![20181123093117.png](https://upload-images.jianshu.io/upload_images/7154520-69bfe63e84aaa027.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![20181123093129.png](https://upload-images.jianshu.io/upload_images/7154520-fb163b94351fb1e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![20181123093208.png](https://upload-images.jianshu.io/upload_images/7154520-229a64bddfa0b978.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![20181123093218.png](https://upload-images.jianshu.io/upload_images/7154520-cff89a37d13fcdeb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![20181123093248.png](https://upload-images.jianshu.io/upload_images/7154520-25430af9c3f2fe15.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![20181122134903.png](https://upload-images.jianshu.io/upload_images/7154520-d63c2b19077fdd04.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![404.png](https://upload-images.jianshu.io/upload_images/7154520-784829e13d711cb6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
-![login.png](https://upload-images.jianshu.io/upload_images/7154520-da5161ef55a4eede.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-
-![TIM截图20181122134903.png](https://upload-images.jianshu.io/upload_images/7154520-d63c2b19077fdd04.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![TIM截图20181122135648.png](https://upload-images.jianshu.io/upload_images/7154520-0bd52c5c050ed750.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![TIM截图20181122135703.png](https://upload-images.jianshu.io/upload_images/7154520-aa210540849b7acc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![TIM截图20181122135720.png](https://upload-images.jianshu.io/upload_images/7154520-92754df08d32c026.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![TIM截图20181122135741.png](https://upload-images.jianshu.io/upload_images/7154520-ccbb9a37cbc4370e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
 ## 主要功能介绍
 
-利用爬虫对音乐平台上的歌曲进行爬取，将链接展现出来，后期可能会增加下载功能。
+利用爬虫对音乐平台上的歌曲进行爬取，将链接展现出来。
 
 Web端是用python+flask进行完成。
 
 Cmd端是普通的命令交互式界面。
-
-打算在完成上述所有功能后，再基于Qt开发一个桌面版。

@@ -78,7 +78,7 @@ def music_add():
         )
         db.session.add(music)
         db.session.commit()
-        flash("添加电影成功！", "OK")
+        flash("添加音乐成功！", "OK")
         return redirect(url_for('admin.music_add'))
     return render_template("admin/music_add.html", form=form)
 
@@ -92,14 +92,14 @@ def music_list(page=None):
     return render_template("admin/music_list.html", page_data=page_data)
 
 
-# 删除电影
+# 删除音乐
 @admin.route("/music/del/<int:id>/", methods=["GET"])
 @admin_login_req
 def music_del(id=None):
     music = songsave.query.get_or_404(int(id))
     db.session.delete(music)
     db.session.commit()
-    flash("删除电影成功！", "OK")
+    flash("删除音乐成功！", "OK")
     return redirect(url_for('admin.music_list', page=1))
 
 
