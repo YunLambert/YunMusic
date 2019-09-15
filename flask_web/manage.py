@@ -9,4 +9,4 @@ from wtforms import StringField, SubmitField
 # app.config["SECRET_KEY"] = "12345678"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, threaded=True)

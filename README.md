@@ -1,14 +1,20 @@
 # YunMusic
 集网易云音乐、QQ音乐以及多个音乐平台的在线一站式检索网站，如果所有平台都没有想搜索的歌曲的话，可以自己上传至服务器或者由管理员定期维护相应的歌曲。
 <div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://upload-images.jianshu.io/upload_images/7154520-6c533e2a89c7a23a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  width="100" height="100" ></div>
-
 <div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://upload-images.jianshu.io/upload_images/7154520-b981ddcec494a6b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="100" height="100" ></div>
-
 <div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://upload-images.jianshu.io/upload_images/7154520-5ff2df328498aae1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="100" height="100" ></div>
 
-## 当前进度
+## UPDATE: 20190915 #Add video download
+1.修复了一些api失效问题，并增加了异常处理
+2.增加了视频下载功能，在搜索框直接输入想要下载的链接即可完成下载
 
-### Cmd端   -------**Done!**
+### TODO
+- [ ] 更改文件存储模式，以减小文件存储体积
+- [ ] 重构前端的界面
+- [ ] 完善后台管理员界面的功能，实现能够后台上传并在前端下载的功能
+- [ ] 开辟多线程与锁机制，增快下载速度
+
+## Cmd端   -------**Done!**
 
 细节问题之后会细化，包括加入直接下载的功能，还有显示下载进度条的美化工作。
 
@@ -18,7 +24,7 @@
 
 ![TIM截图20181117215514.png](https://upload-images.jianshu.io/upload_images/7154520-96d467691067730a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### Web端 -----Done!
+## Web端 -----Done!
 
 包括前台和后台两个部分，用户在前台可以通过搜索歌曲名称找到已提供的音乐平台上的歌曲链接(可在线听并下载)，所有这样的链接都会显示在网站列表中；点击"上传资源"则会跳至后台服务，此处需要管理员账号和密码才能登陆，上传的资源记录会保存到数据库中，并在相应的地方进行显示。
 
@@ -56,10 +62,6 @@
 ![20181122134903.png](https://upload-images.jianshu.io/upload_images/7154520-d63c2b19077fdd04.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![404.png](https://upload-images.jianshu.io/upload_images/7154520-784829e13d711cb6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-
-
 
 
 ## 主要功能介绍

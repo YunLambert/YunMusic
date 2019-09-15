@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Result</title>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='base/images/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='admin/bootstrap/css/bootstrap.min.css') }}">
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+    }
+
+    body {
+        background: #252525;
+        margin: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    li a.active {
+        background-color: crimson;
+        color: white;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+
+    h1 {
+        color: ghostwhite;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    p.dotted {
+        border-style: dotted;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table, td, th {
+        border: 1px solid crimson;
+        color: white;
+    }
+
+    th {
+        background-color: crimson;
+        height: 50px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    td {
+        text-align: center;
+    }
+</style>
+<body>
+<ul>
+    <li><a class="active" href="http://127.0.0.1:5000/">搜索页面</a></li>
+    <li><a href="http://127.0.0.1:5000/admin/music/add">上传资源</a></li>
+    <li><a href="http://127.0.0.1:5000/contacts">联系</a></li>
+</ul>
+
+<div style="margin-left:15%;padding:1px 16px;height:1000px;">
+    {% block page_content %}
+        <div>
+            <h1>
+                下载文件列表
+            </h1>
+        </div>
+    {% endblock %}
+
+    <div class="box-body table-responsive no-padding">
+        <table class="table table-hover">
+            <tbody>
+            <tr>
+                <th>编号</th>
+                <th>文件名</th>
+                <th>下载地址</th>
+            </tr>
+
+             {% for v in data %}
+            <tr>
+                <td>{{ v.id }}</td>
+                <td>{{ v.name }}</td>
+                <td><a href={{ v.url }}>点击下载</a></td>
+            </tr>
+            {%  endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+</body>
+</html>
